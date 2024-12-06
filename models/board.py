@@ -6,6 +6,10 @@ class Board:
         """
         Draw the board of Tic-Tac-Toe game
         """
+        for row in range(3):
+            print(" | ".join(self.board[row]))
+            if row < 2:
+                print("--+---+--")
 
     def update_board(self, row: int, col: int, symbol: str) -> bool:
         """
